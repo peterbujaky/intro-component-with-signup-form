@@ -24,7 +24,7 @@ submitButton.addEventListener("click",  function(){
     
     if (lastName.value === "") {
         validationTexts[1].style.visibility = "visible";
-        validationTexts[1].innerHTML="First Name cannot be empty";
+        validationTexts[1].innerHTML="Last Name cannot be empty";
         errorIcons[1].style.visibility = "visible";
         inputFields[1].style.border = "2px solid red"
     }  else {lastName.style.border="0.05rem double rgba(215, 215, 215, 0.907)"
@@ -34,12 +34,12 @@ submitButton.addEventListener("click",  function(){
     
     if (emailAddress.value === "") {
         validationTexts[2].style.visibility = "visible";
-        validationTexts[2].innerHTML="First Name cannot be empty";
+        validationTexts[2].innerHTML="Email Address cannot be empty";
         errorIcons[2].style.visibility = "visible";
         inputFields[2].style.border = "2px solid red";
     } else if(emailAddress.value !=="" && !emailAddress.value.match(emailFormat)) {
         validationTexts[2].style.visibility = "visible";
-        validationTexts[2].innerHTML="First Name cannot be empty";;
+        validationTexts[2].innerHTML="Looks like this is not an email";
         errorIcons[2].style.visibility = "visible";
         inputFields[2].style.border = "2px solid red";
     } else if (emailAddress.value !=="" && emailAddress.value.match(emailFormat)) {
@@ -49,7 +49,7 @@ submitButton.addEventListener("click",  function(){
     }
     
     if (password.value === ""){
-        validationTexts[3].innerHTML="First Name cannot be empty";;
+        validationTexts[3].innerHTML="Password cannot be empty";
         validationTexts[3].style.visibility = "visible";
         errorIcons[3].style.visibility = "visible";
         inputFields[3].style.border = "2px solid red"
