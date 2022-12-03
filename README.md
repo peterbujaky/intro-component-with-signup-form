@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop 1440px](screenshots/desktop.png) ![mobile 375px](screenshots/mobile.png) 
+![desktop 1440px](screenshots/desktop.png)
 
 ### Links
 
